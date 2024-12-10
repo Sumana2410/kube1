@@ -23,7 +23,7 @@ pipeline {
             steps {
                 script {
                     // Delete and start Minikube cluster
-                    bat 'minikube delete'
+                    //bat 'minikube delete'
                     bat 'minikube start'
                     
                     // Enable the dashboard addon
