@@ -24,14 +24,7 @@ pipeline {
                 script {
                     // Delete and start Minikube cluster
                     // Delete existing Minikube cluster (if exists)
-                     bat 'minikube delete'
-                    bat 'minikube start'
-
-                    bat 'minikube addons enable dashboard'
-
-                    bat 'kubectl apply -f my-kube1-deployment.yaml'
-                    bat 'kubectl apply -f my-kube1-service.yaml'
-                    bat 'minikube dashboard'
+                    echo 'building executed...'
 
                 }
             }
