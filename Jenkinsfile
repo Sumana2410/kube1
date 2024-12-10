@@ -25,7 +25,7 @@ pipeline {
                     // Delete and start Minikube cluster
                     // Delete existing Minikube cluster (if exists)
                     bat 'minikube delete'
-                    bat 'minikube start'
+                    bat 'minikube start --memory=3800'
                     
                     // Enable the dashboard addon
                     bat 'minikube addons enable dashboard'
